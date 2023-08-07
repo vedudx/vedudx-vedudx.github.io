@@ -66,6 +66,7 @@ textarea {
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
+  margin-top: 20px;
   text-align: center; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
@@ -201,6 +202,12 @@ textarea {
     border: 2px solid #eee;
     border-left: 2px solid #eee;
     transform: translateY(-50%); }
+    .home-hero__socials-right {
+      position: absolute;
+      top: 50%;
+      border: 2px solid #eee;
+      border-left: 2px solid #eee;
+      transform: translateY(-50%); }
     @media only screen and (max-width: 56.25em) {
       .home-hero__socials {
         display: none; } }
@@ -242,6 +249,23 @@ textarea {
   .home-hero__info {
     margin: 3rem auto 0 auto;
     max-width: 80rem; }
+  .home-hero__info_left {
+    /* margin: 3rem auto 0 auto; */
+    /* margin-left: 0px;
+    padding-left: 0px;
+    max-width: 80rem; 
+    float: left; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .home-hero__info_left img{
+    margin-left: 0px;
+    padding-left: 0px;
+    float: left;
+  }
   .home-hero__cta {
     margin-top: 5rem;
     text-align: center; }
@@ -276,10 +300,16 @@ textarea {
         margin-bottom: 4rem; }
 
 .projects__row {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 5rem;
-  margin-bottom: 11rem; }
+  margin-bottom: 11rem; */ 
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
+
+  transition: transform 0.5s ease;
+} 
   @media only screen and (max-width: 56.25em) {
     .projects__row {
       grid-template-columns: 1fr;
@@ -291,7 +321,8 @@ textarea {
   .projects__row:last-child {
     margin-bottom: 0; }
   .projects__row-img-cont {
-    overflow: hidden; }
+    overflow: hidden; 
+    flex:1.5}
   .projects__row-img {
     width: 100%;
     display: block;
@@ -320,7 +351,7 @@ textarea {
       margin-bottom: 3rem; }
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-desc {
-          font-size: 1.7rem; } }
+          font-size: 1.7rem; } } 
 
 .contact {
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
@@ -402,6 +433,44 @@ textarea {
       .contact__btn {
         width: 100%; } }
 
+.projects-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-carousel__slides {
+  display: flex;
+  transition: transform 0.5s ease;
+
+}
+
+ /* .projects__row{
+  /* min-width: 100%; */
+  /* flex-shrink: 0; 
+  flex: 0 0 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+}  */
+
+.projects-carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.projects-carousel__button--prev {
+  left: 0;
+}
+
+.projects-carousel__button--next {
+  right: 0;
+}
+        
 .project-cs-hero {
   color: #fff;
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
@@ -692,6 +761,85 @@ textarea {
     opacity: 1;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
+
+
+.projects-carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0062b9;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 20px; /* Adjust the size as needed */
+  cursor: pointer;
+}
+
+.projects-carousel__button--prev {
+  left: 0;
+}
+
+.projects-carousel__button--next {
+  right: 0;
+}
+
+.experience-timeline {
+  margin-top: 30px;
+}
+
+.experience-timeline__title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline__item {
+  padding: 20px;
+  position: relative;
+  width: 50%;
+  left: 50%;
+}
+
+.timeline__item:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #000;
+  border-radius: 50%;
+  left: -13px;
+  top: 20px;
+}
+
+.timeline__item:nth-child(even) {
+  left: 0;
+}
+
+.timeline__item:nth-child(even):before {
+  left: auto;
+  right: -13px;
+}
+
+.timeline__content {
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #000;
+  top: 0;
+  bottom: 0;
+ 
+}
+  
 
 @keyframes wheel {
   to {

@@ -36,3 +36,16 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.projects__row');
+
+function changeSlide(direction) {
+  currentSlide += direction;
+  if (currentSlide < 0) currentSlide = slides.length - 1;
+  if (currentSlide >= slides.length) currentSlide = 0;
+
+  const offset = currentSlide * -100;
+  document.querySelector('.projects-carousel__slides').style.transform = `translateX(${offset}%)`;
+}
