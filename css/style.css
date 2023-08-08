@@ -9,6 +9,8 @@ $breakpoint arguement choices:
 - tab-port
 - tab-land
 - big-desktop
+##0062b9
+rgba(0, 98, 185, 0.8)
 
 Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
 */
@@ -47,7 +49,7 @@ a {
   color: inherit; }
 
 li {
-  list-style: none; }
+  list-style: none; } 
 
 input:focus,
 button:focus,
@@ -473,7 +475,7 @@ textarea {
         
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(158,210,190,0.8), rgba(158,210,190,0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -765,7 +767,7 @@ textarea {
 
 .projects-carousel__button {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   background: #0062b9;
   color: #fff;
@@ -788,7 +790,8 @@ textarea {
 }
 
 .experience-timeline__title {
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 2.8rem;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -828,6 +831,7 @@ textarea {
   background: #f3f3f3;
   padding: 20px;
   border-radius: 10px;
+  clear: both;
 }
 
 .timeline::before {
@@ -839,7 +843,33 @@ textarea {
   bottom: 0;
  
 }
+.timeline__logo {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  margin-right: 10px;
+  float: left;
+}
+/* .timeline__content p,
+.bullet-list {
+  font-size: 1rem; /* Adjust this value to match the desired font size 
+} */
+
+
+
+.timeline__content .bullet-list li {
+  list-style-type: disc ;
+  list-style-position: inside;
+  margin-bottom: 1px;
+  color:#666;
+}
+.timeline__content .bullet-list {  
   
+  /* list-style-position: inside; */
+  padding-left: 60px;
+  font-size: 1rem;
+  margin-top: 5px; /* Additional space above the list */
+  color: #000;
+}
 
 @keyframes wheel {
   to {
