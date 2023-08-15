@@ -167,6 +167,16 @@ textarea {
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
+
+.btn {
+  display: inline-block; /* This makes the buttons sit side by side */
+  margin-right: 25px; /* Add some spacing between the buttons */
+}
+
+.btn:last-child {
+  margin-right: 0; /* Remove the right margin for the last button to ensure equal spacing */
+} 
+
 .sec-pad {
   padding: 12rem 0; }
   @media only screen and (max-width: 56.25em) {
@@ -188,7 +198,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.65), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -356,7 +366,7 @@ textarea {
           font-size: 1.7rem; } } 
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.6), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
@@ -704,7 +714,7 @@ textarea {
       .main-footer__row-2 {
         width: 100%; } }
   .main-footer__short-desc {
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #eee;
     font-size: 1.5rem;
     line-height: 1.7; }
@@ -807,7 +817,7 @@ textarea {
   left: 50%;
 }
 
-.timeline__item:before {
+/* .timeline__item:before {
   content: '';
   position: absolute;
   width: 6px;
@@ -816,7 +826,7 @@ textarea {
   border-radius: 50%;
   left: -13px;
   top: 20px;
-}
+} */
 
 .timeline__item:nth-child(even) {
   left: 0;
@@ -862,14 +872,35 @@ textarea {
   margin-bottom: 1px;
   color:#666;
 }
-.timeline__content .bullet-list {  
+.timeline__content h4{
+  font-size: 1.1rem;
+}
+.timeline__content p,
+.bullet-list {  
   
   /* list-style-position: inside; */
   padding-left: 60px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 5px; /* Additional space above the list */
   color: #000;
 }
+
+.static-form{
+  text-align: center;
+}
+
+.main-footer_left_icon{
+
+  padding-top: 0%;
+  margin-right: 1rem;
+  width: 2.5rem; 
+}
+
+.button-container {
+  text-align: center; /* This will center-align the buttons if desired */
+}
+
+
 
 @keyframes wheel {
   to {
