@@ -797,11 +797,24 @@ textarea {
 }
 
 .projects-carousel__button--prev {
-  left: 0;
+  left: 180px;
 }
 
 .projects-carousel__button--next {
-  right: 0;
+  right: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects-carousel__button {
+    padding: 8px; /* Reduce padding for mobile */
+    font-size: 16px; /* Reduce font size for mobile */
+    top: 50%; /* Adjust vertical position */
+  }
+
+  .projects-carousel__button--prev,
+  .projects-carousel__button--next {
+    transform: translateY(-50%) !important; /* Ensure the button is vertically centered */
+  }
 }
 
 .experience-timeline {
