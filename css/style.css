@@ -900,6 +900,20 @@ textarea {
   text-align: center; /* This will center-align the buttons if desired */
 }
 
+.footer-container {
+  display: flex;          /* Set the container to flex */
+  align-items: center;    /* Vertically center align the items */
+}
+
+.main-footer_left_icon {
+  margin-right: 10px;     /* Add some spacing between the icon and the email text */
+
+}
+
+.email-text {
+  display: inline-block;  /* Ensure the text doesn't break to the next line */
+}
+
 
 
 @keyframes wheel {
