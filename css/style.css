@@ -335,6 +335,15 @@ textarea {
   .projects__row-img-cont {
     overflow: hidden; 
     flex:1.5}
+  .projects__row-img-amog {
+      overflow: hidden; 
+      flex:0.6;
+      padding-top: 50px;
+      padding-left: 250px;
+      display: block;
+      margin-right: 0;
+      padding-right: 0;}
+
   .projects__row-img {
     width: 100%;
     display: block;
