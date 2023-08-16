@@ -478,16 +478,7 @@ textarea {
   transition: transform 0.5s ease;
 }
 
-@media only screen and (max-width: 768px) {
-  .projects-carousel__slides {
-    overflow-x: auto;             
-    scrollbar-width: none;     
-  }
 
-  .projects-carousel__slides::-webkit-scrollbar {
-    display: none;                
-  }
-}
 
 
 
