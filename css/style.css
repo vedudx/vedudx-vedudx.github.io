@@ -465,15 +465,56 @@ textarea {
 
 }
 
- /* .projects__row{
+
+
+.projects-carousel__button {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background: #0062b9;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 20px; /* Adjust the size as needed */
+  cursor: pointer;
+}
+
+.projects-carousel__button--prev {
+  left: 180px;
+}
+
+.projects-carousel__button--next {
+  right: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects-carousel__slides {
+    flex-direction: column; /* Stack slides vertically on mobile if necessary */
+  }
+
+  .projects-carousel__button {
+    padding: 8px;
+    font-size: 16px;
+    top: 50%;
+    width: 40px; /* Explicit width and height can help create a larger touch target */
+    height: 40px;
+  }
+
+  .projects-carousel__button--prev,
+  .projects-carousel__button--next {
+    transform: translateY(-50%);
+  }
+}
+
+ .projects__row{
   /* min-width: 100%; */
-  /* flex-shrink: 0; 
+  /* flex-shrink: 0; */
   flex: 0 0 100%;
   display: flex;
   transition: transform 0.5s ease;
-}  */
+} 
 
-.projects-carousel__button {
+/* .projects-carousel__button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -490,7 +531,7 @@ textarea {
 
 .projects-carousel__button--next {
   right: 0;
-}
+} */
         
 .project-cs-hero {
   color: #fff;
@@ -783,39 +824,6 @@ textarea {
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
 
-
-.projects-carousel__button {
-  position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
-  background: #0062b9;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  font-size: 20px; /* Adjust the size as needed */
-  cursor: pointer;
-}
-
-.projects-carousel__button--prev {
-  left: 180px;
-}
-
-.projects-carousel__button--next {
-  right: 50px;
-}
-
-@media only screen and (max-width: 768px) {
-  .projects-carousel__button {
-    padding: 8px; /* Reduce padding for mobile */
-    font-size: 16px; /* Reduce font size for mobile */
-    top: 50%; /* Adjust vertical position */
-  }
-
-  .projects-carousel__button--prev,
-  .projects-carousel__button--next {
-    transform: translateY(-50%) !important; /* Ensure the button is vertically centered */
-  }
-}
 
 .experience-timeline {
   margin-top: 30px;
