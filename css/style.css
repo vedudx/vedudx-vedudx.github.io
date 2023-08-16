@@ -346,9 +346,14 @@ textarea {
   
 @media only screen and (max-width: 768px) {
   .projects__row-img-amog {
-    flex: 1; /* The image will take up all available space, but you can adjust this value */
-    padding-top: 20px; /* Reduced padding */
-    padding-left: 10px; /* Reduced padding */
+    flex-basis: 100%; 
+    padding: 10px;    
+    max-width: 100%; 
+  }
+
+  .projects__row-img-amog img {
+    width: 100%;    
+    height: auto;     
   }
 }
 
