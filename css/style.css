@@ -479,9 +479,6 @@ textarea {
 }
 
 
-
-
-
 .projects-carousel__button {
   position: absolute;
   top: 60%;
@@ -508,17 +505,17 @@ textarea {
     flex-direction: column; /* Stack slides vertically on mobile if necessary */
   }
 
-  .projects-carousel__button {
+  /* .projects-carousel__button {
     padding: 8px;
     font-size: 16px;
     top: 50%;
-    width: 40px; /* Explicit width and height can help create a larger touch target */
+    width: 40px; /* Explicit width and height can help create a larger touch target 
     height: 40px;
-  }
+  } */
 
   .projects-carousel__button--prev,
   .projects-carousel__button--next {
-    transform: translateY(-50%);
+    display:none;
   }
 }
 
