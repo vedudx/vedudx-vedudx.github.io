@@ -346,9 +346,9 @@ textarea {
   
 @media only screen and (max-width: 768px) {
   .projects__row-img-amog {
-    flex-basis: 100%; 
+    flex-basis: calc(100% -20px); 
     padding: 10px;    
-    max-width: 100%; 
+    max-width: calc(100%-20px); 
   }
 
   .projects__row-img-amog img {
@@ -476,7 +476,17 @@ textarea {
 .projects-carousel__slides {
   display: flex;
   transition: transform 0.5s ease;
+}
 
+@media only screen and (max-width: 768px) {
+  .projects-carousel__slides {
+    overflow-x: auto;             
+    scrollbar-width: none;     
+  }
+
+  .projects-carousel__slides::-webkit-scrollbar {
+    display: none;                
+  }
 }
 
 
@@ -954,6 +964,7 @@ textarea {
 
 .button-container {
   text-align: center; /* This will center-align the buttons if desired */
+  padding-top: 5px;
 }
 
 .footer-container {
