@@ -477,6 +477,7 @@ textarea {
   padding: 10px;
   font-size: 20px; /* Adjust the size as needed */
   cursor: pointer;
+  z-index: 10;
 }
 
 .projects-carousel__button--prev {
@@ -514,24 +515,6 @@ textarea {
   transition: transform 0.5s ease;
 } 
 
-/* .projects-carousel__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.projects-carousel__button--prev {
-  left: 0;
-}
-
-.projects-carousel__button--next {
-  right: 0;
-} */
         
 .project-cs-hero {
   color: #fff;
