@@ -295,10 +295,12 @@ textarea {
     .about__content-title {
       font-weight: 700;
       font-size: 2.8rem;
-      margin-bottom: 3rem; }
+      padding-top: 3rem;
+      margin-bottom: 2rem; }
       @media only screen and (max-width: 37.5em) {
         .about__content-title {
-          font-size: 2.4rem; } }
+          font-size: 2.4rem; 
+        padding-top: 1rem;} }
     .about__content-details-para {
       font-size: 1.8rem;
       color: grey;
@@ -346,9 +348,9 @@ textarea {
   
 @media only screen and (max-width: 768px) {
   .projects__row-img-amog {
-    flex-basis: calc(100% -20px); 
+    flex-basis: 100%; 
     padding: 10px;    
-    max-width: calc(100%-20px); 
+    max-width: 100%; 
   }
 
   .projects__row-img-amog img {
@@ -504,14 +506,6 @@ textarea {
   .projects-carousel__slides {
     flex-direction: column; /* Stack slides vertically on mobile if necessary */
   }
-
-  /* .projects-carousel__button {
-    padding: 8px;
-    font-size: 16px;
-    top: 50%;
-    width: 40px; /* Explicit width and height can help create a larger touch target 
-    height: 40px;
-  } */
 
   .projects-carousel__button--prev,
   .projects-carousel__button--next {
@@ -968,6 +962,23 @@ textarea {
 .email-text {
   display: inline-block;  /* Ensure the text doesn't break to the next line */
 }
+
+.custom-img-style {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  margin-top: 70px;
+}
+
+/* Media query for phone displays (assuming breakpoint at 768px or lower) */
+@media (max-width: 768px) {
+  .custom-img-style {
+      height: 250px; /* Adjust this value as needed */
+      width: 250px;  /* Adjust this value as needed */
+      margin-top: 40px; /* Adjust this value as needed */
+  }
+}
+
 
 
 
