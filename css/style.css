@@ -947,8 +947,9 @@ textarea {
 .button-container {
   text-align: center; /* This will center-align the buttons if desired */
   padding-top: 5px;
+  display: flex;
   .btn{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 
