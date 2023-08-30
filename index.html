@@ -48,7 +48,7 @@
               </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">Research</a>
+              <a href="./index.html#Research_projects" class="header__link">Research</a>
             </li>
 
             <li class="header__link-wrapper">
@@ -89,7 +89,7 @@
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#projects" class="header__link">Research</a>
+              <a href="./index.html#Research_projects" class="header__link">Research</a>
             </li>
 
             <li class="header__sm-menu-link">
@@ -166,7 +166,19 @@
                   <li> As part of the NLP group, I am a member of various reading groups (Meta learning, Neural Net optimization etc.,)</li>
                   <li>I am currently exploring some new novel ways to improve knowledge distillation between sequence to sequence transformers.</li>
                 </ul>
-         </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content">
+                <img src="./assets/png/nrc.jpeg" alt="NRC Logo" class="timeline__logo">
+                <h4>May 2023 - Present</h4>
+                <p>Machine Learning Engineer (NRC CAN & CCG Ualberta)</p>
+                <ul class="bullet-list">
+                  <li> Working on a joint project with NRCCAN & CCG to train a Vision model to identify tree species using lidar data.</li>
+                  <li>Project’s goal is to identify susceptibility for various trees in impacted regions to burn during wildfire, which can assist
+                    firefighters</li>
+                </ul>
+              </div>
             </div>
             <div class="timeline__item">
               <div class="timeline__content">
@@ -404,12 +416,87 @@
             <button class="projects-carousel__button projects-carousel__button--next" onclick="changeSlide(1)">&#8594;</button>
             
           </div>
-          
-
-         
-       
+      
       </div>
     </section>
+
+
+    <section id="Research_projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Research Projects</span>
+          <span class="heading-sec__sub">
+            Here are some interesting Research projects I have worked recently.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects-carousel">
+            <div class="projects-carousel__slides">
+              <!-- Slide 1 -->
+              <div class="projects__row">
+                <!-- Repeat the existing content for each project here -->  
+                <div class="projects__row-img-amog">
+                  <img
+                    src="./assets/png/mlir.png"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">MMA Dialect in MLIR</h3>
+                  <p class="projects__row-content-desc">
+                  This project is a dialect written for the IBM Power 10 MMA unit in MLIR.
+                  Dialects are essential in the MLIR ecosystem, allowing the creation of new attributes, operations, and types for a wide range of abstractions, from arithmetic to pattern rewrites. They are a fundamental and versatile aspect of MLIR's structure.
+                  As part of writing this dialect in MLIR, I wrote a lot of tensor operations like outer product, matrix multiplication etc in MLIR.
+                  Objective of the project was to provide an end to end compiling solution of tensorflow/pytorch graphs via MLIR to IBM MMA unit.
+
+                  </p>
+                  <div class="button-container">
+                    <a href="https://github.com/vedudx/llvm-project" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Github</a>
+                    <a href="https://mlir.llvm.org/docs/Dialects/" class="btn btn--med btn--theme dynamicBgClr" target="_blank"> More Info </a> 
+                  </div>
+               
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="projects__row">
+                <div class="projects__row-img-amog">
+                  <img
+                    src="./assets/png/latex.png"
+                    alt="Software Screenshot"
+                    class="projects__row-img"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="projects__row-content">
+                  <h3 class="projects__row-content-title">Latex Text-to-Speech engine</h3>
+                  <p class="projects__row-content-desc">
+                    This project aims to tackle the poor quality of text to speech apps when dealing with latex equations. 
+                    It is deployed and hosted on Google Cloud. I used ANTLR4 to build my own lexer and parser to map latex equations to english text.
+                    Website supports text, png and jpeg, and uses Google cloud text to speech to convert parsed text to audio.
+                  </p>
+                  <div class="button-container">
+                    <a href="https://github.com/3iq-hacks/math-tts" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Github</a>
+                    <a href="https://math-tts.vercel.app/" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Website</a>
+                  </div>
+                </div>
+              </div>
+
+           
+                </div>
+              </div>
+            </div>
+            </div>
+            <button class="projects-carousel__button_2 projects-carousel__button--prev" onclick="changeSlide2(-1)">&#8592;</button>
+            <button class="projects-carousel__button_2 projects-carousel__button--next" onclick="changeSlide2(1)">&#8594;</button> 
+            
+          </div>
+      
+      </div>
+    </section>
+
     <section id="contact" class="contact sec-pad dynamicBg">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">

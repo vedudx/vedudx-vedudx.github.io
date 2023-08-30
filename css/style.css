@@ -360,6 +360,8 @@ textarea {
 }
 
 
+
+
   .projects__row-img {
     width: 100%;
     display: block;
@@ -483,7 +485,7 @@ textarea {
 
 .projects-carousel__button {
   position: absolute;
-  top: 60%;
+  top: 53%;
   transform: translateY(-50%);
   background: #0062b9;
   color: #fff;
@@ -501,6 +503,21 @@ textarea {
 .projects-carousel__button--next {
   right: 50px;
 }
+
+.projects-carousel__button_2 {
+  position: absolute;
+  top: 67%;
+  transform: translateY(-50%);
+  background: #0062b9;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 20px; /* Adjust the size as needed */
+  cursor: pointer;
+  z-index: 10;
+}
+
+
 
 @media only screen and (max-width: 768px) {
   .projects-carousel__slides {

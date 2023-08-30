@@ -39,7 +39,7 @@ headerLogoConatiner.addEventListener('click', () => {
 
 
 let currentSlide = 0;
-const slides = document.querySelectorAll('.projects__row');
+const slides = document.querySelectorAll('#projects .projects__row');
 
 function changeSlide(direction) {
   currentSlide += direction;
@@ -47,5 +47,23 @@ function changeSlide(direction) {
   if (currentSlide >= slides.length) currentSlide = 0;
 
   const offset = currentSlide * -100;
-  document.querySelector('.projects-carousel__slides').style.transform = `translateX(${offset}%)`;
+  document.querySelector('#projects .projects-carousel__slides').style.transform = `translateX(${offset}%)`;
+}
+
+
+let currentSlide2 = 0;
+const slides2 = document.querySelectorAll('#Research_projects .projects__row');
+
+
+function changeSlide2(direction) {
+
+  currentSlide2 += direction;
+  if (currentSlide2 < 0) currentSlide2 = slides2.length - 1;
+  if (currentSlide2 >= slides2.length) currentSlide2 = 0;
+
+  const offset = currentSlide2 * -100;
+  const slideContainer = document.querySelector('#Research_projects .projects-carousel__slides');
+
+  slideContainer.style.transform = `translateX(${offset}%)`;
+  // document.querySelector('.projects-carousel__slides').style.transform = `translateX(${offset}%)`;
 }
