@@ -879,7 +879,7 @@ textarea {
   border-radius: 10px;
   clear: both;
 }
-
+/* 
 .timeline::before {
   content: '';
   position: absolute;
@@ -888,7 +888,7 @@ textarea {
   top: 0;
   bottom: 0;
  
-}
+} */
 .timeline__logo {
   width: 50px; /* Adjust as needed */
   height: auto;
@@ -912,7 +912,7 @@ textarea {
   
   /* list-style-position: inside; */
   padding-left: 60px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-top: 5px; /* Additional space above the list */
   color: #000;
 }
